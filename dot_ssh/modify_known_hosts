@@ -1,0 +1,7 @@
+// chezmoi:modify-template
+{{- $public_hosts_file_path := joinPath .chezmoi.sourceDir "dot_ssh/public_hosts" -}}
+{{- $public_hosts_file := include $public_hosts_file_path | trim -}}
+{{- $public_hosts_file_lines := regexSplit "[\r\n]+" $public_hosts_file -1  }}
+{{- $current_hosts := .chezmoi.stdin | trim -}}
+{{- $current_hosts_lines := regexSplit "[\r\n]+" $current_hosts -1 -}}
+{{- concat $public_hosts_file_lines $current_hosts_lines | uniq | join "\n" -}}

@@ -1,0 +1,15 @@
+[tools]
+bun = "latest"
+"cargo:bluetui" = "latest"
+chezmoi = "latest"
+fnox = "latest"
+go = "latest"
+node = "latest"
+"npm:@devcontainers/cli" = "latest"
+rust = "latest"
+zig = "latest"
+
+[settings]
+
+[settings.npm]
+bun = true

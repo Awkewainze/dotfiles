@@ -1,0 +1,30 @@
+packages:
+  linux:
+    cachyos:
+      repos:
+        cachyos:
+          - cachyos-gaming-applications
+          - cachyos-gaming-meta
+        extra:
+          - 7zip
+          - age
+          - argon2
+          - axel
+          - btop
+          - caddy
+          - fzf
+          - prismlauncher
+          - signal-desktop
+          - ttf-fira-code
+          - vivaldi
+          - vlc
+          - yt-dlp
+          - zoxide
+        aur:
+          - 1password
+          - bruno-bin
+          - noisetorch-git
+          - nordvpn-bin
+          - spotify
+          - vesktop-bin
+          - vscodium

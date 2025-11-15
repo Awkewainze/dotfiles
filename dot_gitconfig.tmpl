@@ -1,0 +1,16 @@
+[user]
+	name = {{ .name }}
+	email = {{ .email }}
+	signingkey = {{ onepasswordRead "op://Development/Primary SSH Key/public key" }}
+[init]
+	defaultBranch = main
+[core]
+	autocrlf = input
+	excludesfile = ~/.gitignore
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /opt/1Password/op-ssh-sign
+[commit]
+	gpgsign = true
+
