@@ -5,6 +5,10 @@ packages:
         cachyos:
           - cachyos-gaming-applications
           - cachyos-gaming-meta
+          - noisetorch-git
+          - vesktop-bin
+          - vscodium
+          - yay
         extra:
           - 7zip
           - age
@@ -13,6 +17,10 @@ packages:
           - btop
           - caddy
           - fzf
+          - podman
+          - podman-compose
+          - podman-desktop
+          - podman-docker
           - prismlauncher
           - signal-desktop
           - ttf-fira-code
@@ -23,8 +31,5 @@ packages:
         aur:
           - 1password
           - bruno-bin
-          - noisetorch-git
           - nordvpn-bin
           - spotify
-          - vesktop-bin
-          - vscodium

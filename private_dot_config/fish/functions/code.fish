@@ -1,3 +1,3 @@
 function code --wraps=vscodium --description 'alias code=vscodium'
-	vscodium $argv
+    vscodium $argv
 end

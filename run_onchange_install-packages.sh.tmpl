@@ -8,18 +8,11 @@ exit
 
 # CachyOS default installed packages https://github.com/CachyOS/cachyos-calamares/blob/cachyos-systemd-qt6/src/modules/netinstall/netinstall.yaml
 
-# Install yay if not installed
+
 if ! command -v yay &>/dev/null; then
 	sudo pacman -Syu
-	sudo pacman -S --needed git base-devel
-	git clone https://aur.archlinux.org/yay.git
-	cd yay
-	makepkg -si
-fi
-
-# Install mise if not installed
-if ! command -v mise &>/dev/null; then
-	curl https://mise.run | sh
+	# cachyos repo contains `yay` package
+	sudo pacman -S yay
 fi
 {{- end -}}
 {{- end -}}
